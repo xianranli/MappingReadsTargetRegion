@@ -1,15 +1,11 @@
 # MappingReadsTargetRegion
 Automatically downloading NGS reads from SRA, mapping to the reference and extracting the reads mapped to the targets.
-
-The purpose of this script is to focuse the reads mapped at the desired regions, instead of whole genome, to discover potential polymorphisms between among the interested strains and reference. This is helpful for identifying functional site in the narrowed QTL interval.
-
-The rational behind this script is a) the wet-bench oriented people may have limited knowledge to run NGS, 2) their computering resources is limited (memory, disk space), 3) but the time is not a big concern. 
-
-because of the large size of sra fand fastq files, after downloading sra from NCBI SRA, this script balance the time and computing resources by split the whole fastq file into small chunks, then each chunk will be mapped indepently, which requires less membory, the reads mapped to target region will be extracted with awk then stored as bam file.
-
+The purpose of this script is to focus the reads mapped at the desired regions, instead of whole genome, to discover potential polymorphisms between among the interested strains and reference. This is helpful for identifying functional site in the narrowed QTL interval.
+The rationale behind this script is a) the wet-bench oriented people may have limited knowledge to run NGS, 2) their compute ring resources is limited (memory, disk space), 3) but the time is not a big concern.
+because of the large size of sra and fastq files, after downloading sra from NCBI SRA, this script balance the time and computing resources by split the whole fastq file into small chunks, then each chunk will be mapped independently, which requires less memories, the reads mapped to target region will be extracted with awk then stored as bam file.
 After all chunks are finished, the bam file from each chunk will be merged into one file and indexed.
+Currently only support in Unix/Linux environment (with wget and awk built-in the system)
 
-Currently only support in Uniux/Linux environment (with wget and awk build-in the system)
 
 Prerequisites
 1. bwa https://github.com/lh3/bwa
