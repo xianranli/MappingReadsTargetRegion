@@ -36,12 +36,12 @@ a). The reference is stored in /home/xxx/refs/Test_ref_bwa;
 
 b). The project directory is /home/xxx/Test/;
 
-c). The srr_list file is /home/xxx/Test/srr_list;
+c). The srr_list file is /home/xxx/Test/srr_info;
 
 d). The SAM header file is /home/xxx/Test/sam_header
 
 
-perl /home/xxx/Test/scripts/bp_run_bwa_mem_TP.pl /home/xxx/Test/ /home/xxx/Test/srr_list /home/xxx/refs/Test_ref_bwa /home/xxx/Test/sam_header
+perl /home/xxx/Test/scripts/bp_run_bwa_mem_TP.pl /home/xxx/Test/ /home/xxx/Test/srr_info /home/xxx/refs/Test_ref_bwa /home/xxx/Test/sam_header
 
 The final combined bam file, for example, will be stored  under the project fold, '/home/xxx/Test/80M.bam' for the 1st strain, '/home/xxx/Test/Hegari.bam' for the 2nd strain.
 
