@@ -1,16 +1,16 @@
 #!/usr/local/bin/perl -w
 
 use strict;
-my $bwa = 'bwa';
-my $btrim  = 'Btrim64';
-my $PE_pl = 'paired_end_trim.pl';
-#my $filter_pl = '/home/lixr/PollenSeq/scripts/filter_unique_reads_bwa.pl';
+
 my $pre_dir =  $ARGV[0]; ##'/home/lixr/Sb/qHT7/';
 my $srr_list_file = $ARGV[1]; ##'/home/lixr/Sb/sra_info';
 my $genome_ref_4_bwa = $ARGV[2];; ### '/home/lixr/Sb/Refs/Sb_V3_all_bwa';
 ## sam header file. futhure work: this file can be generated within pipline to reduce one argument passing to perl
 my $sam_header_file = $ARGV[3]; ##'/home/lixr/Sb/Refs/Sb_SAM_header';
 
+my $bwa = 'bwa';
+my $btrim  = 'Btrim64';
+my $PE_pl = 'paired_end_trim.pl';
 my $split_lines = 8000000; #the number can be modified
 my $split_filter = '--filter='."'".'gzip > $FILE.gz'."'";
 
