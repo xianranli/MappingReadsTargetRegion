@@ -12,6 +12,7 @@ Prerequisites
 
 Only required input file
 ---------------------------
+This example file try to map reads from 4 strains
 bwa_Group	Strain	SRR
 
 1	80M	SRR5271055
@@ -23,4 +24,7 @@ bwa_Group	Strain	SRR
 4	BTx623	SRR5271056
 
 ---------------------------
-The final combined bam file, for example, will be '80M.bam' for the 1st accession, 'Hegari.bam' for the 2nd accession.
+The final combined bam file, for example, will be '80M.bam' for the 1st strain, 'Hegari.bam' for the 2nd strain.
+
+Usage:
+perl bp_run_bwa_mem_TP.pl pre_dir srr_list reference sam_header
