@@ -11,11 +11,16 @@ Prerequisites
 3. indexed reference by bwa 
 
 Only required input file
-
+---------------------------
 bwa_Group	Strain	SRR
+
 1	80M	SRR5271055
+
 2	Hegari	SRR5271058
+
 3	IS3620C	SRR5271059
+
 4	BTx623	SRR5271056
 
-The final combined bam file, for example, will be 80M.bam for the 1st accession
+---------------------------
+The final combined bam file, for example, will be '80M.bam' for the 1st accession, 'Hegari.bam' for the 2nd accession.
