@@ -28,11 +28,16 @@ bwa_Group	Strain	SRR
 Usage:
 perl bp_run_bwa_mem_TP.pl project_dir srr_list reference sam_header
 
-For example, assuming the script is stored at /home/xxx/Test/scripts/
-the reference is stored in /home/xxx/refs/Test_ref_bwa;
-the project directory is /home/xxx/Test/;
-the srr_list file is /home/xxx/Test/srr_list;
-and the same header file is /home/xxx/Test/sam_header
+For example, assuming the script is stored at /home/xxx/Test/scripts/.
+
+a). The reference is stored in /home/xxx/refs/Test_ref_bwa;
+
+b). The project directory is /home/xxx/Test/;
+
+c). The srr_list file is /home/xxx/Test/srr_list;
+
+d). The SAM header file is /home/xxx/Test/sam_header
+
 
 perl /home/xxx/Test/scripts/bp_run_bwa_mem_TP.pl /home/xxx/Test/ /home/xxx/Test/srr_list /home/xxx/refs/Test_ref_bwa /home/xxx/Test/sam_header
 
